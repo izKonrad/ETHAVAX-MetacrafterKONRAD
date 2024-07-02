@@ -9,7 +9,7 @@ contract StoreContract {
     event InventoryRestocked(string itemName, uint256 quantity);
 
     constructor() {
-        owner = msg.sender; // Set contract deployer as the owner
+        owner = msg.sender; 
     }
 
     modifier onlyOwner() {
@@ -31,7 +31,7 @@ contract StoreContract {
     }
 
     function assertPurchaseWithFunction(string memory itemName, uint256 quantity) public {
-        // Perform assert
+        
         assertFunction(inventory[itemName] >= quantity, "Insufficient inventory");
 
         uint256 newInventory = inventory[itemName] - quantity;

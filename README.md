@@ -1,4 +1,4 @@
-# StoreContract Contract
+# Store Contract
 
 The StoreContract demonstrates basic inventory management functionalities on the Ethereum blockchain. It includes features for purchasing items and restocking inventory, with access control limited to the contract owner.
 
